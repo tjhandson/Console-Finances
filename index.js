@@ -19,7 +19,7 @@
 // ======================= END OF NOTES ===================================
 
 
-var finances = [
+let finances = [
     ['Jan-2010', 867884],
     ['Feb-2010', 984655],
     ['Mar-2010', 322013],
@@ -107,3 +107,24 @@ var finances = [
     ['Jan-2017', 138230],
     ['Feb-2017', 671099]
 ];
+
+const financesMonths = finances.map(x => x[0]);
+const financesData = finances.map(x => x[1]);
+
+// Task 1 - total number of months 
+totalMonths = finances.length
+console.log(finances.length);
+
+// Task 2 - The net total amount of Profit/Losses over the entire period.
+
+let totalNetProfit = 0;
+for (let i = 0; i < totalMonths; i++) {
+    totalNetProfit += finances[i][1];
+}
+
+console.log(totalNetProfit);
+
+
+// Task 3 - * The average of the **changes** in Profit/Losses over the entire period.
+
+
