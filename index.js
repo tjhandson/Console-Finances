@@ -1,23 +1,3 @@
-// Task 1 - The total number of months included in the dataset.
-// Task 2 - The net total amount of Profit/Losses over the entire period.
-//          Start Pre Jan @ 0 
-// Task 3 - * The average of the **changes** in Profit/Losses over the entire period.
-//          You will need to track what the total change in profits are from month to month and then find the average.
-//          (`Total/Number of months`)
-// Task 4 - The greatest increase in profits (date and amount) over the entire period.
-// Task 5 - The greatest decrease in losses (date and amount) over the entire period.
-
-// Output Requirements - 
-//           Financial Analysis
-//          ----------------------------
-//           Total Months: 25
-//           Total: $2561231
-//           Average  Change: $-2315.12
-//           Greatest Increase in Profits: Feb-2012 ($1926159)
-//           Greatest Decrease in Profits: Sep-2013 ($-2196167)
-
-// ======================= END OF NOTES ===================================
-
 
 let finances = [
     ['Jan-2010', 867884],
@@ -109,7 +89,7 @@ let finances = [
 ];
 
 // Task 1 - total number of months - Completed
-totalMonths = finances.length
+const totalMonths = finances.length
 
 // Task 2 - The net total amount of Profit/Losses over the entire period.
 let totalNetProfit = 0;
@@ -119,15 +99,15 @@ for (let i = 0; i < totalMonths; i++) {
 
 // Task 3 - * The average of the **changes** in Profit/Losses over the entire period.    
 let profitChange = 0
-for (let i = 1; i < finances.length; i++) {
+for (let i = 1; i < totalMonths; i++) {
     profitChange += (finances[i][1]) - (finances[i - 1][1])
 }
-let averageChange = profitChange / ((finances.length) - 1)
+let averageChange = profitChange / ((totalMonths) - 1)
 
 // Task 4 - The greatest increase in profits (date and amount) over the entire period.
 let greatestIncreaseProfit = 0
 let greatestIncreaseProfitMonth = []
-for (let i = 1; i < finances.length; i++) {
+for (let i = 1; i < totalMonths; i++) {
     if ((finances[i][1] - finances[i - 1][1]) > greatestIncreaseProfit) {
         greatestIncreaseProfit = (finances[i][1] - finances[i - 1][1])
         greatestIncreaseProfitMonth = (finances[i][0])
@@ -137,7 +117,7 @@ for (let i = 1; i < finances.length; i++) {
 // Task 5 - The greatest decrease in losses (date and amount) over the entire period.
 let greatestDecreaseProfit = 0
 let greatestDecreaseProfitMonth = []
-for (let i = 1; i < finances.length; i++) {
+for (let i = 1; i < totalMonths; i++) {
     if ((finances[i][1] - finances[i - 1][1]) < greatestDecreaseProfit)
         greatestDecreaseProfit = (finances[i][1] - finances[i - 1][1])
     greatestDecreaseProfitMonth = (finances[i][0])
