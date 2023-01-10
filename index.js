@@ -1,4 +1,4 @@
-
+// starter code containing the finance data
 let finances = [
     ['Jan-2010', 867884],
     ['Feb-2010', 984655],
@@ -88,7 +88,7 @@ let finances = [
     ['Feb-2017', 671099]
 ];
 
-// Task 1 - total number of months - Completed
+// Task 1 - Total number of months 
 const totalMonths = finances.length
 
 // Task 2 - The net total amount of Profit/Losses over the entire period.
