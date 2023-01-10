@@ -30,17 +30,17 @@ It is recomented to download Git if you are looking to interact with this public
 # VS Code
 Visual Studio Code is a source-code editor (there are others available), The download for this cn be found on; https://code.visualstudio.com/download
 
-## Usage 
+# Usage 
 This is a public repo and available to be run on either a webrowser or locally. 
 
-# Run on Wb browser (Chrome recommented for acccess to Console)
+## Run on Wb browser (Chrome recommented for acccess to Console)
 Follow the link on: https://tjhandson.github.io/Console-Finances/
 
 To access the console in Chrome Browser use this keyboard shortcut: "Cmd + Option + J" (on a Mac) or "Ctrl +Shift +J" (on Windows). 
 However, alternatively right-click on the webpage and click "Inspect" to open the developer console and slecet the "Console" tab within this tab
 
 
-# Run Locally 
+## Run Locally 
 
 Clone project
 git clone git@github.com:tjhandson/Console-Finances.git
