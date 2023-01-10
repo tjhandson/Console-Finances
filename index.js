@@ -108,23 +108,28 @@ let finances = [
     ['Feb-2017', 671099]
 ];
 
-const financesMonths = finances.map(x => x[0]);
-const financesData = finances.map(x => x[1]);
-
-// Task 1 - total number of months 
+// Task 1 - total number of months - Completed
 totalMonths = finances.length
-console.log(finances.length);
 
 // Task 2 - The net total amount of Profit/Losses over the entire period.
-
 let totalNetProfit = 0;
 for (let i = 0; i < totalMonths; i++) {
     totalNetProfit += finances[i][1];
 }
 
-console.log(totalNetProfit);
+// Task 3 - * The average of the **changes** in Profit/Losses over the entire period.    
+let profitChange = 0
+for (let i = 1; i < finances.length; i++) {
+    profitChange += (finances[i][1]) - (finances[i - 1][1]) // profit change is the sum of all the differences between each month
+}
+let averageChange = profitChange / ((finances.length) - 1)
 
 
-// Task 3 - * The average of the **changes** in Profit/Losses over the entire period.
+//Console Log
+console.log("Financial Analysis");
+console.log("----------------------------");
+console.log("Total Months: " + totalMonths);
+console.log("Total: $" + totalNetProfit);
+console.log("Average Profit or Loss Per Month: $" + averageChange.toFixed(2))
 
 
