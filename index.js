@@ -120,9 +120,9 @@ for (let i = 0; i < totalMonths; i++) {
 // Task 3 - * The average of the **changes** in Profit/Losses over the entire period.    
 let profitChange = 0
 for (let i = 1; i < finances.length; i++) {
-    profitChange += (finances[i][1]) - (finances[i - 1][1]) // profit change is the sum of all the differences between each month
+    profitChange += (finances[i][1]) - (finances[i - 1][1])
 }
-let averageChange = profitChange / ((finances.length) - 1) // negitive 1 to equate for different length within calculation
+let averageChange = profitChange / ((finances.length) - 1)
 
 // Task 4 - The greatest increase in profits (date and amount) over the entire period.
 let greatestIncreaseProfit = 0
@@ -134,13 +134,20 @@ for (let i = 1; i < finances.length; i++) {
     }
 }
 
+// Task 5 - The greatest decrease in losses (date and amount) over the entire period.
+let greatestDecreaseProfit = 0
+let greatestDecreaseProfitMonth = []
+for (let i = 1; i < finances.length; i++) {
+    if ((finances[i][1] - finances[i - 1][1]) < greatestDecreaseProfit)
+        greatestDecreaseProfit = (finances[i][1] - finances[i - 1][1])
+    greatestDecreaseProfitMonth = (finances[i][0])
+}
 
-//Console Log
+//Console Log Display
 console.log("Financial Analysis");
 console.log("----------------------------");
 console.log("Total Months: " + totalMonths);
 console.log("Total: $" + totalNetProfit);
 console.log("Average Profit or Loss Per Month: $" + averageChange.toFixed(2))
 console.log("Month of Largest Profit and Amount: " + greatestIncreaseProfitMonth + " ($" + greatestIncreaseProfit + ")")
-
-
+console.log("Month of Largest Profit and Amount: " + greatestDecreaseProfitMonth + " ($" + greatestDecreaseProfit + ")")
