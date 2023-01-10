@@ -14,7 +14,7 @@ Final code should print the analysis within the console.
 
 https://tjhandson.github.io/Console-Finances/
 
-![alt text](./images/README_images/console-Finances_display.png)
+![alt text](./Images/README_images/console-Finances_display.png)
 
 ## Installation
 
@@ -46,7 +46,7 @@ Clone project
 git clone git@github.com:tjhandson/Console-Finances.git
 
 Once downloaded the follow assets should be available within this folder:
-![alt text](./images/README_images/console-Finances_contents.png)
+![alt text](./Images/README_images/console-Finances_contents.png)
 
 
 ## Credits
