@@ -12,7 +12,7 @@ This is a Student Portfolio Project for Bootcamp course with EDx using Bootstrap
 
 Final code should print the analysis within the console.
 
-https://tjhandson.github.io/221209_Console-Finances/
+https://tjhandson.github.io/Console-Finances/
 
 ![alt text](./images/README_images/console-Finances_display.png)
 
@@ -34,7 +34,7 @@ Visual Studio Code is a source-code editor (there are others available), The dow
 This is a public repo and available to be run on either a webrowser or locally. 
 
 # Run on Wb browser (Chrome recommented for acccess to Console)
-Follow the link on: https://tjhandson.github.io/221209_Console-Finances/
+Follow the link on: https://tjhandson.github.io/Console-Finances/
 
 To access the console in Chrome Browser use this keyboard shortcut: "Cmd + Option + J" (on a Mac) or "Ctrl +Shift +J" (on Windows). 
 However, alternatively right-click on the webpage and click "Inspect" to open the developer console and slecet the "Console" tab within this tab
